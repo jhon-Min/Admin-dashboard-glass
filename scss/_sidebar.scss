@@ -1,4 +1,35 @@
-.sidebar{
 
+
+.sidebar{
+     min-height: 100vh;
     
+
+    .menu-title{
+        font-size: 13px;
+    }
+
+    .menu-link{
+        padding: 12px 0;
+        border-left: 3px solid transparent;
+        transition: .5s;
+        a{
+            i, span{
+                color: rgba(255, 255, 255, 0.65);
+            }
+            span{
+                font-size: 15px;
+            }
+        }
+
+        &:hover{
+            background: rgba(255, 255, 255, 0.15);
+            border-left-color: #ffffff;
+
+           a{
+                i, span{
+                color: #ffffff;
+               }
+           }
+        }
+    }
 }

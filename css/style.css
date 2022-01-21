@@ -54,3 +54,29 @@ body {
 .dropdown-item:hover {
   background: #3f3f3f;
 }
+
+.sidebar {
+  min-height: 100vh;
+}
+.sidebar .menu-title {
+  font-size: 13px;
+}
+.sidebar .menu-link {
+  padding: 12px 0;
+  border-left: 3px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.sidebar .menu-link a i, .sidebar .menu-link a span {
+  color: rgba(255, 255, 255, 0.65);
+}
+.sidebar .menu-link a span {
+  font-size: 15px;
+}
+.sidebar .menu-link:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-left-color: #ffffff;
+}
+.sidebar .menu-link:hover a i, .sidebar .menu-link:hover a span {
+  color: #ffffff;
+}
