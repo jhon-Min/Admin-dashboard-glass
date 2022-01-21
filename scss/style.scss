@@ -17,9 +17,12 @@ and (min-width: 1030px)
 and (max-width: 1366px)  
 { 
     .w-20{
-        width: 18%;
+        width: 20%;
     }
     .w-80{
-        width: 82%;
+        width: 80%;
     }
 }  
+
+@import './dashboard';
+@import './sidebar';
