@@ -67,6 +67,12 @@ body {
     width: 270px !important;
   }
 }
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .head-search {
+    width: 180px !important;
+  }
+}
 /* ========== Content ============ */
 .head-img {
   width: 35px;
