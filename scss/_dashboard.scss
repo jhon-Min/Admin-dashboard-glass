@@ -1,5 +1,4 @@
-// Content Box
-
+/* ========== Content ============ */
 
 .head-img{
     width: 35px;
@@ -13,7 +12,8 @@
 .head-search{
     width: 350px;
     font-size: 15px;
-    background-color: rgba(255,255,255,.125);
+    // background-color: rgba(255,255,255,.125);
+    background-color: rgba(255, 255, 255, 0.2);
     border-color: rgba(255,255,255,.125);
     transition: .5s;
 }

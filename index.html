@@ -15,7 +15,7 @@
        <div class="row">
            <!-- SideBar -->
             <div class="col-lg-3 w-20 d-none d-lg-block bg-glass sidebar ps-0 pe-0">
-                <div class="mt-2 px-2">
+                <div class="mt-2 px-2">   
                   <img src="img/logo-icon.png" alt="" class="side-logo">
                   <span class="text-white fs-5 ms-2">Brand Name</span>
                 </div>
@@ -23,7 +23,7 @@
                 <div class="side-menu"> 
                   <ul class="list-inline">
                     <li class="small text-secondary fw-light mt-4 ps-2 menu-title">Main Navigation</li>
-                    <li class="menu-link px-3">
+                    <li class="menu-link px-3 side-active">
                       <a href="" class="text-decoration-none text-white">
                         <i class="fas fa-th-large"></i>
                         <span class="ms-2">Dashboard</span>
@@ -38,7 +38,7 @@
                     </li>
 
                     <li class="menu-link px-3">
-                      <a href="" class="text-decoration-none text-white">
+                      <a href="login.html" class="text-decoration-none text-white">
                         <i class="fas fa-unlock-alt"></i>
                         <span class="ms-2">Login</span>
                       </a>
@@ -118,8 +118,31 @@
 
                 <!-- Header -->
                 <nav class="navbar navbar-expand-lg navbar-light bg-glass">
-                    <div class="container">
-                      <div>
+                    <div class="container-fluid">
+                      <div class="d-flex align-items-center">
+                        
+                        <!-- SideBar Btn Start -->
+                        <div class="d-block d-lg-none">
+                          <a class="" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                            <i class="fas fa-bars me-3 fs-5 text-white"></i>
+                          </a>
+                          <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                              <div>   
+                                <img src="img/logo-icon.png" alt="" class="side-logo">
+                                <span class="text-white fs-5 ms-2">Brand Name</span>
+                              </div>
+                              <a href="" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <i class="fas fa-times text-danger fs-4"></i>
+                              </a>
+                            </div>
+                            <div class="offcanvas-body">
+                             
+                            </div>
+                          </div>
+                        </div>
+                        <!-- SideBar End -->
+
                         <form class="d-flex">
                           <input class="form-control head-search me-2" type="search" placeholder="Enter keywords" aria-label="Search">
                           <button class="btn btn-search bg-glass" type="submit">
@@ -128,7 +151,7 @@
                         </form>
                       </div>
                     
-                      <div class="collapse navbar-collapse" id="navbarNav">
+                      <!-- <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                           <li class="nav-item me-2">
                             <a class="nav-link" href="#">
@@ -167,6 +190,41 @@
                             </div>
                           </li>
                         </ul>
+                      </div> -->
+
+                      <div class="d-flex align-items-center">
+                        <a class="me-3" href="#">
+                          <i class="far fa-envelope-open text-white"></i>
+                        </a>
+
+                        <a class="me-4" href="#">
+                          <i class="far fa-bell text-white"></i>
+                        </a>
+
+                        <div class="dropdown">
+                          <a class="" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="img/my-profile.jpg" alt="" class="rounded-circle shadow border border-white head-img">
+                          </a>
+                        
+                          <ul class="dropdown-menu when-drop bg-dark" aria-labelledby="dropdownMenuLink">
+                            <li class="px-2 d-flex align-items-center dropdown-item py-2">
+                              <img src="img/my-profile.jpg" alt="" class="rounded-circle shadow border border-white head-img">
+                              <a href="" class="ms-2 text-decoration-none">
+                                <p class="text-white small mb-0">Nyi Say Min</p>
+                                <p class="text-white fw-light mb-0" style="font-size: 12px;">minnyisay@gmail.com</p>
+                              </a>
+                            </li>
+                            <li><hr class="dropdown-divider text-white"></li>
+                            <li><a class="dropdown-item text-white small" href="#">
+                              <i class="fas fa-cog small me-2"></i>
+                              Setting
+                            </a></li>
+                            <li><a class="dropdown-item text-white small" href="#">
+                              <i class="fas fa-power-off small me-2"></i>
+                              Logout
+                            </a></li>
+                          </ul>
+                      </div>
                       </div>
                     </div>
                 </nav>

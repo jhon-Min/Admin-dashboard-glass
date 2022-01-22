@@ -1,3 +1,4 @@
+/* ========== Global css class ============ */
 body {
   background-image: url("../img/1.png");
   min-height: 100vh;
@@ -10,6 +11,39 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.form-control:focus {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.45);
+          box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.45);
+  color: white;
+}
+
+.form-control::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: whitesmoke;
+}
+
+.form-control::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: whitesmoke;
+}
+
+.form-control:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: whitesmoke;
+}
+
+.form-control::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: whitesmoke;
+}
+
+.form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: whitesmoke;
+}
+
+/* ========== Media Query ============ */
 /* For 1366 Resolution */
 @media only screen and (min-width: 1030px) and (max-width: 1366px) {
   .w-20 {
@@ -20,6 +54,12 @@ body {
     width: 80%;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .head-search {
+    width: 200px !important;
+  }
+}
+/* ========== Content ============ */
 .head-img {
   width: 35px;
   height: 37px;
@@ -32,7 +72,7 @@ body {
 .head-search {
   width: 350px;
   font-size: 15px;
-  background-color: rgba(255, 255, 255, 0.125);
+  background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.125);
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -55,6 +95,7 @@ body {
   background: #3f3f3f;
 }
 
+/* ========== Sidebar ============ */
 .sidebar::-webkit-scrollbar {
   width: 7px;
 }
@@ -92,8 +133,25 @@ body {
 }
 .sidebar .menu-link:hover {
   background: rgba(255, 255, 255, 0.15);
-  border-left-color: #ffffff;
 }
 .sidebar .menu-link:hover a i, .sidebar .menu-link:hover a span {
   color: #ffffff;
+}
+
+.side-active {
+  background: rgba(255, 255, 255, 0.15);
+  border-left: 3px solid white !important;
+  color: white;
+}
+.side-active a i, .side-active a span {
+  color: #ffffff !important;
+}
+
+/* ========== Login & Register ============ */
+.form-input-glass {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.125);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 15px;
 }
