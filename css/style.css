@@ -70,7 +70,7 @@ body {
 @media only screen and (max-width: 600px) {
   /*Big smartphones [426px -> 600px]*/
   .head-search {
-    width: 180px !important;
+    width: 200px !important;
   }
 }
 /* ========== Content ============ */
@@ -109,6 +109,28 @@ body {
   background: #3f3f3f;
 }
 
+.btn-theme {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  border-radius: 0;
+}
+
+.i-rotate {
+  -webkit-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 /* ========== Sidebar ============ */
 .sidebar::-webkit-scrollbar {
   width: 7px;
