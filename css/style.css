@@ -47,6 +47,10 @@ body {
   width: 280px;
 }
 
+.ls-1 {
+  letter-spacing: 1px;
+}
+
 /* ========== Media Query ============ */
 /* For 1366 Resolution */
 @media only screen and (min-width: 1030px) and (max-width: 1366px) {
@@ -201,4 +205,14 @@ body {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.18);
   border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* ========== Profile ============ */
+.cover-img {
+  height: 120px;
+}
+
+.profile {
+  width: 88px;
+  height: 90px;
 }
