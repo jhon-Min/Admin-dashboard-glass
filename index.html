@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-theme">
+<body class="bg-theme bg-theme1" id="theme">
     
    <section class="container-fluid">
        <div class="row">
@@ -234,13 +234,18 @@
                 <button class="btn btn-dark btn-theme" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
                   <i class="fas fa-cog i-rotate"></i>
                 </button>
-                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas offcanvas-bottom bg-dark px-2" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
                   <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+                    <h5 class="offcanvas-title text-white" id="offcanvasBottomLabel">Choose Your Theme</h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
-                  <div class="offcanvas-body small">
-                    ...
+                  <div class="offcanvas-body smal theme-panel text-center text-md-start">
+                    <img src="img/1.png" alt="" id="theme1" class="pick-theme me-4 shadow mb-3">
+                    <img src="img/2.png" alt="" id="theme2" class="pick-theme me-4 shadow mb-3">
+                    <img src="img/3.png" alt="" id="theme3" class="pick-theme me-4 shadow mb-3">
+                    <img src="img/4.png" alt="" id="theme4" class="pick-theme me-4 shadow mb-3">
+                    <img src="img/6.png" alt="" id="theme6" class="pick-theme me-4 shadow mb-3">
+                    <img src="img/5.png" alt="" id="theme5" class="pick-theme me-4 shadow mb-3">
                   </div>
                 </div>
 
@@ -253,6 +258,8 @@
        </div>
    </section>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
