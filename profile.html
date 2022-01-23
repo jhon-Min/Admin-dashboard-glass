@@ -176,6 +176,7 @@
                 <!-- Content -->
                 <div class="container-fluid mt-4">
                     <div class="row">
+                      <!-- Profile -->
                         <div class="col-12 col-md-5">
                             <div class="card bg-glass card-glass shadow">
                                 <div class="card-body">
@@ -197,14 +198,15 @@
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-7 mt-4 mt-lg-0">
+                        <!-- Edit Form -->
+                        <div class="col-12 col-md-7 mt-5 mt-md-0">
                             <div class="card bg-glass">
                                 <div class="card-body">
                                   <ul class="nav nav-tabs" id="myTab" role="tablist">
                                     <li class="nav-item profile-tab" role="presentation">
                                       <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
                                         <i class="fas fa-user-edit me-1"></i>
-                                        Edit Profile Info
+                                        Edit Profile
                                       </button>
                                     </li>
                                     <li class="nav-item profile-tab" role="presentation">
@@ -215,11 +217,74 @@
                                     </li>
                                   </ul>
                                   <div class="tab-content" id="myTabContent">
+                                    <!-- Edit Profile Info -->
                                     <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                       <form>
+                                        <div class="row mt-4 mb-3">
+                                          <label class="col-12 col-lg-3 col-form-label text-white ps-3">
+                                            <i class="far fa-user-circle fs-5"></i>
+                                            <span class="ms-1">Username</span>
+                                          </label>
+                                          <div class="col-12 col-lg-9">
+                                            <input type="password" class="form-control form-input-glass" placeholder="Username">
+                                          </div>
+                                        </div>
 
+                                        <div class="row mb-3">
+                                          <label class="col-12 col-lg-3 col-form-label text-white ps-3">
+                                            <i class="far fa-envelope fs-5"></i>
+                                            <span class="ms-1">Email</span>
+                                          </label>
+                                          <div class="col-12 col-lg-9">
+                                            <input type="password" class="form-control form-input-glass" placeholder="example@gmail.com">
+                                          </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                          <label class="col-12 col-lg-3 col-form-label text-white ps-3">
+                                            <i class="fab fa-facebook fs-5"></i>
+                                            <span class="ms-1">Facebook</span>
+                                          </label>
+                                          <div class="col-12 col-lg-9">
+                                            <input type="password" class="form-control form-input-glass" placeholder="Your Facebook Address">
+                                          </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                          <label class="col-12 col-lg-3 col-form-label text-white ps-3">
+                                            <i class="fab fa-telegram-plane fs-5"></i>
+                                            <span class="ms-1">Telegram</span>
+                                          </label>
+                                          <div class="col-12 col-lg-9">
+                                            <input type="password" class="form-control form-input-glass" placeholder="Your Telegram Link">
+                                          </div>
+                                        </div>
+
+                                        <div class="row mb-5">
+                                          <label class="col-12 col-lg-3 col-form-label text-white ps-3">
+                                            <i class="fas fa-map-marked-alt fs-5"></i>
+                                            <span class="ms-1">Address</span>
+                                          </label>
+                                          <div class="col-12 col-lg-9">
+                                            <textarea name="" class="form-control form-input-glass" rows="3" placeholder="Address"></textarea>
+                                          </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between align-items-center">
+                                          <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" required>
+                                            <label class="form-check-label text-white" for="flexSwitchCheckDefault">I'm sure</label>
+                                          </div>
+
+                                          <button class="btn btn-login px-3">
+                                            <i class="far fa-save fs-5 me-1"></i>
+                                            Save Changes
+                                          </button>
+                                        </div>
                                       </form>
                                     </div>
+
+                                    <!-- Edit Password -->
                                     <div class="tab-pane fade ps-3" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                                       <form>
                                         <div class="update-pass">
@@ -245,7 +310,7 @@
                                             </div>
                                           </div>
 
-                                          <div class="mb-4">
+                                          <div class="mb-5">
                                             <label for="" class="form-label text-white small">
                                               <i class="fas fa-check me-1"></i>
                                               Confirm Password
@@ -256,7 +321,12 @@
                                             </div>
                                           </div>
 
-                                          <div class=" float-end">
+                                          <div class="d-flex justify-content-between align-items-center">
+                                            <div class="form-check form-switch">
+                                              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" required>
+                                              <label class="form-check-label text-white" for="flexSwitchCheckDefault">I'm sure</label>
+                                            </div>
+
                                             <button class="btn btn-login px-3">
                                               <i class="fas fa-sync-alt me-1"></i>
                                               Update Password
