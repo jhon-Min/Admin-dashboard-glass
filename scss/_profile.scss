@@ -7,3 +7,23 @@
     width: 88px;
     height: 90px;
 }
+
+.nav-tabs .nav-link.active{
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border-color: transparent;
+}
+
+.profile-tab{
+    transition: .5s;
+    button{
+        color: rgba(255, 255, 255, 0.65);
+    }
+}
+.nav-link:hover {
+    color: white;
+}
+
+.update-pass{
+    width: 75%;
+}

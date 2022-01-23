@@ -259,7 +259,9 @@
   border-color: rgba(255, 255, 255, 0.125);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  font-size: 15px;
+  font-size: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-right: 32px;
 }
 
@@ -275,7 +277,7 @@
   border-color: rgba(255, 255, 255, 0.125);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
 }
 .btn-login:hover {
@@ -292,4 +294,26 @@
 .profile {
   width: 88px;
   height: 90px;
+}
+
+.nav-tabs .nav-link.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border-color: transparent;
+}
+
+.profile-tab {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.profile-tab button {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.update-pass {
+  width: 75%;
 }
