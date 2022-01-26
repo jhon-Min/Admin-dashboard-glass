@@ -77,6 +77,10 @@
   letter-spacing: 1px;
 }
 
+.text-glass {
+  color: rgba(255, 255, 255, 0.65);
+}
+
 /* ========== Media Query ============ */
 /* For 1366 Resolution */
 @media only screen and (min-width: 1030px) and (max-width: 1366px) {
@@ -90,16 +94,21 @@
 }
 @media only screen and (max-width: 1200px) {
   .head-search {
-    width: 270px !important;
+    width: 300px !important;
   }
 }
 @media only screen and (max-width: 600px) {
   /*Big smartphones [426px -> 600px]*/
   .head-search {
-    width: 210px !important;
+    width: 215px !important;
   }
 }
 /* ========== Content ============ */
+.content-box {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
 .head-img {
   width: 35px;
   height: 37px;
@@ -110,7 +119,7 @@
 }
 
 .head-search {
-  width: 350px;
+  width: 400px;
   font-size: 15px;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.125);
@@ -178,6 +187,29 @@
 .theme-panel::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 100px;
+}
+
+tr {
+  border-color: rgba(255, 255, 255, 0.65);
+}
+
+.table > :not(caption) > * > * {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.btn-control {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.125);
+  border-color: rgba(255, 255, 255, 0.125);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 13px;
+}
+.btn-control:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.18);
 }
 
 /* ========== Sidebar ============ */
